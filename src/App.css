@@ -1,3 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+  font-family: "Yekan";
+  font-weight: 400;
+  src: url('./assets/font/iranyekanwebmedium.woff') format('woff')  ,
+
+       
+}
+@font-face {
+  font-family: "Yekan";
+  font-weight: 100;
+  src: url('./assets/font/iranyekanwebthin.woff') format('woff')  ,
+
+       
+}
+
+@font-face {
+  font-family: "Yekan";
+  font-weight:800;
+  src:   url('./assets/font/iranyekanwebblack.woff') format('woff')    ,
+    
+    
+      
+     
+}
+@font-face {
+  font-family: "Yekan";
+  font-weight: 600;
+  src:  url('./assets/font/iranyekanwebbold.woff')  format('woff')  ,
+    
+    
+      
+     
+}
+@font-face {
+  font-family: "Yekan";
+  font-weight: 200;
+  src: url('./assets/font/iranyekanweblight.woff') format('woff')   ,
+    
+      
+
+}
+
+
+p , h1 , h2 , h3 , h4 , button , li , a , input ,th,tr,td {
+  font-family: "yekan";
+
+  
+}
+
 .App {
   text-align: center;
 }
@@ -35,4 +89,8 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+  #card>*:hover{
+  color:rgb(255, 255, 255) !important;
 }

@@ -599,26 +599,38 @@ const Main = ()=>{
 
                     <div className='flex flex-row  h-1/5 justify-evenly items-center '>
 
-                        <div className='flex flex-col justify-center items-center'>
+                     <motion.div
+
+                        initial={{ opacity: 0, scale:0 }}
+                        animate={{ opacity: 1, scale:1  } }
+                        transition={{ duration: 0.5 , ease: [0, 0.71, 0.2, 1.01] ,delay:0.2 }}  className='flex flex-col justify-center items-center'>
                             <div className='bg-slate-800 w-12 p-2 rounded-lg '>
-                                <TrashIcon className='text-gray-300' />
+                                <TrashIcon className='text-gray-300 hover:text-red-600 duration-200' />
                             </div>
                             <h1 className='text-gray-300 mt-2 text-xs'>حذف</h1>
-                        </div>
+                        </motion.div>
 
-                        <div className='flex flex-col justify-center items-center'>
+                     <motion.div
+
+                        initial={{ opacity: 0, scale:0 }}
+                        animate={{ opacity: 1, scale:1  } }
+                        transition={{ duration: 0.5 , ease: [0, 0.71, 0.2, 1.01] ,delay:0.4  }}  className='flex flex-col justify-center items-center'>
                             <div className='bg-slate-800 w-12 p-2 rounded-lg '>
-                                <PencilIcon className='text-gray-300' />
+                                <PencilIcon className='text-gray-300 hover:text-green-600 duration-200' />
                             </div>
-                            <h1 className='text-gray-300 mt-2 text-xs'> ویرایش</h1>
-                        </div>
+                            <h1 className='text-gray-300 mt-2 text-xs '> ویرایش</h1>
+                        </motion.div>
 
-                        <div className='flex flex-col justify-center items-center'>
+                     <motion.div
+
+                        initial={{ opacity: 0, scale:0 }}
+                        animate={{ opacity: 1, scale:1  } }
+                        transition={{ duration: 0.5 , ease: [0, 0.71, 0.2, 1.01] ,delay:0.6  }}  className='flex flex-col justify-center items-center'>
                             <div className='bg-slate-800 w-12 p-2 rounded-lg '>
-                                <ShareIcon className='text-gray-300' />
+                                <ShareIcon className='text-gray-300 hover:text-blue-600 duration-200' />
                             </div>
                             <h1 className='text-gray-300 mt-2 text-xs'>اشتراگ گذاری</h1>
-                        </div>
+                        </motion.div>
                        
                         
                     </div>
